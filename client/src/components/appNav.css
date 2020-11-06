@@ -1,0 +1,15 @@
+header {
+    background-color: rgba(255, 192, 203, 0.164);
+}
+
+a {
+    text-decoration: none !important; 
+    color: #1c115e !important;
+    padding: 2rem 2rem;
+    font-weight: bold !important; 
+}
+
+a:hover {
+   border-bottom: 1px solid #01000827;
+}
+
