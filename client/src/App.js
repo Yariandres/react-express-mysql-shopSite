@@ -13,10 +13,11 @@ const App = () => {
     return (
         <Router>
             <Fragment>
+            
                 <AppNav/>
 
                 <Switch>
-                    <Route exact path='/shop' component={ Shop }/>
+                    <Route exact path='/' component={ Shop }/>
                     <Route exact path='/products' component={ Products }/>
                     <Route exact path='/cart' component={ Cart }/>
                     <Route exact path='/orders' component={ Orders }/>

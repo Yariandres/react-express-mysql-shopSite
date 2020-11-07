@@ -12,7 +12,7 @@ export const AppNav = () => {
                     <Link href="/home">MyShop</Link>
 
                     <Nav className="m-auto">
-                        <Link to="/shop">Shop</Link>
+                        <Link to="/">Shop</Link>
                         <Link to="/products">Products</Link>
                         <Link to="/cart">Cart</Link>
                         <Link to="/orders">Orders</Link>
