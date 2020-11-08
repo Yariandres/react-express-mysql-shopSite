@@ -8,16 +8,16 @@ export const AppNav = () => {
     return (
         <header className="nav">
             <Container>
-                <Navbar bg="light" variant="light">
+                <Navbar bg="light" variant="light" className="py-5">
                     <Link href="/home">MyShop</Link>
 
                     <Nav className="m-auto">
-                        <Link to="/">Shop</Link>
-                        <Link to="/products">Products</Link>
-                        <Link to="/cart">Cart</Link>
-                        <Link to="/orders">Orders</Link>
-                        <Link to="/add-product">Add Product</Link>
-                        <Link to="/admin-products">Admin Products</Link>
+                        <Link to="/" className="mr-3 p-3">Shop</Link>
+                        <Link to="/products" className="mr-3 p-3">Products</Link>
+                        <Link to="/cart" className="mr-3 p-3">Cart</Link>
+                        <Link to="/orders" className="mr-3 p-3">Orders</Link>
+                        <Link to="/add-product" className="mr-3 p-3">Add Product</Link>
+                        <Link to="/admin-products" className="mr-3 p-3">Admin Products</Link>
                     </Nav>            
                 </Navbar>          
             
