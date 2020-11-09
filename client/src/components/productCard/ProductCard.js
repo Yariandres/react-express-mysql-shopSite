@@ -5,15 +5,14 @@ import { Card, Row, Col } from 'react-bootstrap';
 
 import './productCard.css';
 
-export const ProductCard = prodItem => {
+export const ProductCard = ({ products }) => {
 
     return (
         <Row>
-            { prodItem.prodItem.map(item => (
+            { products.map(item => (
                 <Col sm={3}>          
                     <Card className="mt-5">
                         <Card.Img variant="top" src={item.imageUrl} />
-
                         <Card.Body>
                             <Card.Title>{item.title}</Card.Title>
 
@@ -27,7 +26,6 @@ export const ProductCard = prodItem => {
                         <Card.Footer>
                             <small className="text-muted">Created date: {item.createdAt}</small>
                         </Card.Footer>
-
                     </Card>
                 </Col>
             )) }
