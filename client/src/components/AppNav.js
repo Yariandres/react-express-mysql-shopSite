@@ -9,8 +9,6 @@ export const AppNav = () => {
         <header className="nav">
             <Container>
                 <Navbar bg="light" variant="light" className="py-5">
-                    <Link href="/home">MyShop</Link>
-
                     <Nav className="m-auto">
                         <Link to="/" className="mr-3 p-3">Shop</Link>
                         <Link to="/products" className="mr-3 p-3">Products</Link>

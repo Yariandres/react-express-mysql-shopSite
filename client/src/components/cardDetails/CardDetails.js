@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Card, Row, Col } from 'react-bootstrap';
 
-import './productCard.css';
-
-export const ProductCard = ({ products }) => {
+export const CardDetails = ({ products }) => {
 
     return (
         <Row>
