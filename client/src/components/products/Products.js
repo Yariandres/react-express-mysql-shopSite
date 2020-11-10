@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap';
 
 export const Products = () => {
 
-    const { data, loading } = useFetch('http://localhost:5000');
+    const { data, loading } = useFetch('http://localhost:5000/products');
 
     return (
         <div className="products">
