@@ -16,4 +16,15 @@ exports.getProducts = (req, res, next) => {
             res.json({ products })
         })
         .catch(err => console.log(err));
+};
+
+exports.getProduct = (req, res, next) => {
+    const productId = req.params.id;
+
+    Product
+        .findByPk(productId)
+        .then(products => {
+            res.json({ products })
+        })
+        .catch(err => console.log(err));
 }
