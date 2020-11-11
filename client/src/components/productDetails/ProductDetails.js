@@ -17,8 +17,8 @@ export const ProductDetails = () => {
   
     return (
         <div className="shop">
-            <Container>
-               {console.log(data)}
+            <Container className="text-center">                
+                { loading ? <h1 className="text-center">Loading product details</h1> : <CardDetails products={ data }/>}
             </Container>            
         </div>
     );

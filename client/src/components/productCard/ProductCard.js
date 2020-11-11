@@ -10,7 +10,7 @@ export const ProductCard = ({ products }) => {
     return (
         <Row>
             { products.map(item => (
-                <Col sm={3}>          
+                <Col sm={3} key={item.id}>          
                     <Card className="mt-5">
                         <Card.Img variant="top" src={item.imageUrl} />
                         <Card.Body>
