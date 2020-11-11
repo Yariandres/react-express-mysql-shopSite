@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { Card, Row, Col } from 'react-bootstrap';
 
-import './cardDetails.css'
-
 export const CardDetails = ({ products }) => {
     return (  
         <Card className="mt-5 product-details" style={{ width: '40rem', display: 'inline-block' }}>
