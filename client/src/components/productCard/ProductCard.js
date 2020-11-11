@@ -20,7 +20,9 @@ export const ProductCard = ({ products }) => {
                                 {item.description}
                             </Card.Text>
 
-                            <Link to="/products" className="btn btn-outline-primary">Details</Link>
+                            <Link to={{
+                                pathname: `/products/${item.id}`
+                            }} className="btn btn-outline-primary">Details</Link>
 
                             <Link to="/cart" className="btn btn-outline-success ml-3">Add to Cart</Link>
                         </Card.Body>
