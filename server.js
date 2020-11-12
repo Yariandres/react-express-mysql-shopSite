@@ -1,4 +1,6 @@
 const express = require('express');
+const sequelize = require('./util/database');
+
 const bodyParser = require('body-parser');
 var cors = require('cors');
 

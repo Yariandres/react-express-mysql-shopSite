@@ -19,13 +19,13 @@ export const AddProduct = () => {
     const handleSubmit = () => {
         fetch('http://localhost:5000/admin/add-product', {
             method: "POST",
-            body: JSON.stringify({ data: values }),
-            headers: { 'Content-Type': 'application/json'}
+            body: JSON.stringify(values),
+            headers: { 'Content-Type': 'application/json'},
+            redirect: "follow",
         })
             .then(response => response.json)
             .catch(err => console.log(err))
     }
-
 
     return (
         <Container className="add-products text-center">
