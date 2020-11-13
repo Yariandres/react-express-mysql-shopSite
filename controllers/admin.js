@@ -11,7 +11,7 @@ exports.postAddProduct = (req, res, next) => {
         price,
         imageUrl,
         description,
-        userId: 1
+        userId: '1'
     })
     .then(result => {
         console.log('Product created!')
@@ -19,3 +19,7 @@ exports.postAddProduct = (req, res, next) => {
     })
     .catch(err => console.log(err));
 };
+
+exports.getProducts = (req, res, next) => {
+    
+}
